@@ -68,6 +68,21 @@ class LinkedList {
         this.size++;
     }
 
+    //Get at Index
+    getAt(index) {
+        let current = this.head;
+        let count = 0;
+
+        while (current) {
+            if (count == index) {
+                console.log(current.data);
+            }
+            count++;
+            current = current.next;
+        }
+        return null;
+    }
+
     //Print list data
     printListData() {
         let current = this.head;
@@ -87,4 +102,6 @@ ll.insertFirst(300);
 ll.inserLast(400);
 ll.insertAt(500, 2);
 
-ll.printListData();
+ll.getAt(3);
+
+// ll.printListData();
