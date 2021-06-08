@@ -109,6 +109,12 @@ class LinkedList {
         this.size--;
     }
 
+    //Clear list
+    clearList() {
+        this.head = null;
+        this.size = 0;
+    }
+
     //Print list data
     printListData() {
         let current = this.head;
@@ -128,6 +134,7 @@ ll.insertFirst(300);
 ll.inserLast(400);
 ll.insertAt(500, 2);
 ll.removeAt(1);
+ll.clearList();
 
 // ll.getAt(3);
 
